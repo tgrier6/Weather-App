@@ -29,9 +29,9 @@ ul {
 }
 
 #top-display {
+  border-radius: 25px;
   display: inline;
   text-align: center;
-  border: none;
 }
 
 #td-weather {
