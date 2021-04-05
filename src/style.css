@@ -4,3 +4,10 @@ ul {
   margin: 0 auto;
   text-align: center;
 }
+
+.weather-display {
+  display: inline;
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+}
