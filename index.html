@@ -19,8 +19,22 @@
   </head>
   <body>
     <div class="container">
+        <form class="search">
+        <form id="search-bar">
+        <input type="search" placeholder="Enter Your City Here" id="city-input" />
+        <button type="submit" class="btn btn-outline-primary" id="btn">
+          Search
+        </button>
+        <button
+          id="current-location-button"
+          type="button"
+          class="btn btn-outline-primary">
+          <i class="fas fa-location-arrow" id="arrow-button"></i>
+        </button>
+      </form>
+      
         <div class="card mb-3" style="max-width: 1000px" id="top-display">
-            <div class="row g-0">
+            <div class="row g-0" id="td-weather">
                 <div class="col-md-6">
                     <img
               src="https://img.etimg.com/thumb/msid-75488540,width-640,resizemode-4,imgsize-573673/low-power-mode.jpg"

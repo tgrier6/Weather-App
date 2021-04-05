@@ -17,6 +17,10 @@ ul {
   padding-left: 20px;
 }
 
+.weather-app {
+  padding-top: 20px;
+}
+
 #top-display {
   display: inline;
   text-align: center;
