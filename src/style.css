@@ -9,6 +9,10 @@ ul {
   text-align: center;
 }
 
+.open-source {
+  padding-left: 20px;
+}
+
 #top-display {
   display: inline;
   text-align: center;
