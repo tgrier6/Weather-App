@@ -17,6 +17,11 @@ ul {
   padding-left: 20px;
 }
 
+.search {
+  padding-bottom: 10px;
+  text-align: right;
+}
+
 .weather-app {
   padding-top: 20px;
 }
