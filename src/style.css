@@ -9,6 +9,10 @@ ul {
   text-align: center;
 }
 
+.container {
+  padding-top: 20px;
+}
+
 .open-source {
   padding-left: 20px;
 }
@@ -17,4 +21,5 @@ ul {
   display: inline;
   text-align: center;
   border: none;
+  padding-bottom: 15px;
 }
