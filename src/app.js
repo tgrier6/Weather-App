@@ -42,7 +42,10 @@ function displayWeatherCondition(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   let weatherDescription = response.data.weather[0].description;
   iconElement.setAttribute("src", getIcon(weatherDescription));
+
   celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 function searchCity(city) {
