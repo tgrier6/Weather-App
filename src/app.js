@@ -42,7 +42,6 @@ function displayWeatherCondition(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  iconElement.setAttribute("alt", response.data.weather[0].description);
   let weatherDescription = response.data.weather[0].description;
   iconElement.setAttribute("src", getIcon(weatherDescription));
 }
