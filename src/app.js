@@ -26,6 +26,8 @@ function formatDate(date) {
 
 //Weather & Location
 function displayWeatherCondition(response) {
+  let iconElement = document.querySelector(#icon);
+  iconElement.setAttribute("src", `https://openweather.org/img/wn/04d@2x.png`);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
