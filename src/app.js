@@ -71,4 +71,4 @@ searchButton.addEventListener("click", handleSubmit);
 let currentLocationButton = document.querySelector("#arrow-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Atlanta, GA");
+searchCity("Atlanta");
