@@ -34,8 +34,6 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind-speed").innerHTML = math.round(
     response.data.wind.speed
   );
-  document.querySelector("#precipitation").innerHTML =
-    response.data.main.precipitation;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 
