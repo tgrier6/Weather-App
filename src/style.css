@@ -34,9 +34,7 @@ ul {
 }
 
 .weather-forecast-date,
-.forecast-icons,
-.weather-forecast-temperature-max,
-.weather-forecast-temperature-min {
+.col-3 {
   text-align: center;
 }
 
