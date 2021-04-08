@@ -105,7 +105,6 @@ function displayForecast() {
               <span class="weather-forecast-temperature-min">55˚</span>
             </div>
         </div>
-    </div>
     `;
   });
 
