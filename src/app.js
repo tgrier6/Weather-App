@@ -101,7 +101,7 @@ function displayForecast() {
             alt=""
             />
             <div class="weather-forecast-temperatures">
-              <span class="weather-forecast-temperature-max">70˚</span>
+              <span class="weather-forecast-temperature-max">70˚ | </span>
               <span class="weather-forecast-temperature-min">55˚</span>
             </div>
         </div>
