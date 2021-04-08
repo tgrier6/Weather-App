@@ -89,8 +89,7 @@ displayForecast();
 function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
 
-  forecastElement.innerHTML = `      <div class="weather-app" id="weather-forecast">
-        <div class="card-group">
+  forecastElement.innerHTML = `<div class="card-group">
           <div class="card">
             <img src="http://openweathermap.org/img/wn/03d@2x.png" class="card-img-top"/>
             <div class="card-body">
@@ -167,6 +166,5 @@ function displayForecast() {
             </div>
           </div>
         </div>
-      </div>
-    </div>`;
+      </div>`;
 }
