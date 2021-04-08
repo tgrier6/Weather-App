@@ -114,7 +114,7 @@ function displayForecast(response) {
     if (index < 5) {
       forecastHTML =
         forecastHTML +
-        `<div class="col-3">
+        `<div class="col-2" id="weather-table">
           <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
             <img
             src="http://openweathermap.org/img/wn/${
@@ -132,7 +132,7 @@ function displayForecast(response) {
               )}˚</span>
             </div>
         </div>
-        </div>
+    </div>
     `;
     }
   });

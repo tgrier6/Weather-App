@@ -31,6 +31,15 @@ ul {
   border-radius: 25px;
   box-shadow: 9px 9px 5px rgba(0, 0, 0, 0.3);
   padding-top: 20px;
+  max-width: 1200px;
+}
+
+.weather-table {
+  text-align: center;
+}
+
+#forecast {
+  text-align: center;
 }
 
 #top-display {
