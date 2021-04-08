@@ -98,7 +98,7 @@ function displayForecast() {
           <div class="weather-forecast-date">${day}</div>
             <img
             src="http://openweathermap.org/img/wn/03d@2x.png"
-            alt=""
+            alt="" class="forecast-icons"
             />
             <div class="weather-forecast-temperatures">
               <span class="weather-forecast-temperature-max">70˚ | </span>

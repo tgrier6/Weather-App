@@ -33,7 +33,10 @@ ul {
   padding-top: 20px;
 }
 
-.weather-forecast-date {
+.weather-forecast-date,
+.forecast-icons,
+.weather-forecast-temperature-max,
+.weather-forecast-temperature-min {
   text-align: center;
 }
 
