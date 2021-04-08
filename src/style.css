@@ -30,6 +30,10 @@ ul {
   text-align: center;
 }
 
+#float-container {
+  float: inline-end;
+}
+
 #forecast {
   text-align: center;
 }
