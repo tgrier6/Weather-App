@@ -25,6 +25,14 @@ function formatDate(date) {
 }
 
 //Weather & Location
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "98b5711bc7358d439ba8e0b45dbf74b0";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -44,6 +52,8 @@ function displayWeatherCondition(response) {
   );
   let weatherDescription = response.data.weather[0].description;
   iconElement.setAttribute("src", getIcon(weatherDescription));
+
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -83,10 +93,10 @@ let currentLocationButton = document.querySelector("#arrow-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Atlanta");
-displayForecast();
 
 //5-Day Forecast
 function displayForecast() {
+  console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
