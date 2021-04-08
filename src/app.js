@@ -29,7 +29,6 @@ function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "98b5711bc7358d439ba8e0b45dbf74b0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -114,6 +113,7 @@ function displayForecast() {
               <span class="weather-forecast-temperature-max">70˚ | </span>
               <span class="weather-forecast-temperature-min">55˚</span>
             </div>
+        </div>
         </div>
     `;
   });
