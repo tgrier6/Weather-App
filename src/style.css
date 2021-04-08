@@ -27,6 +27,12 @@ ul {
   text-align: right;
 }
 
+.weather-app {
+  border-radius: 25px;
+  box-shadow: 9px 9px 5px rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+}
+
 #top-display {
   border-radius: 25px;
   display: inline;
