@@ -96,7 +96,7 @@ searchCity("Atlanta");
 
 //5-Day Forecast
 function displayForecast() {
-  console.log(response.data);
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
