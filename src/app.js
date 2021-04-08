@@ -89,82 +89,21 @@ displayForecast();
 function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
 
-  forecastElement.innerHTML = `<div class="card-group">
-          <div class="card">
-            <img src="http://openweathermap.org/img/wn/03d@2x.png" class="card-img-top"/>
-            <div class="card-body">
-              <h5 class="card-title">Wednesday</h5>
-                <ul id="weather-display">
-                      <li>75˚ F | C</li>
-                      <li>Humidity: 35%</li>
-                      <li>Precipitation: 25%</li>
-                      <li>Description: Clear</li>
-                  </ul>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col-2">
+          <div class="weather-forecast-date">Fri</div>
+            <img
+            src="http://openweathermap.org/img/wn/03d@2x.png"
+            alt=""
+            />
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperature-max">70˚</span>
+              <span class="weather-forecast-temperature-min">55˚</span>
             </div>
-          </div>
-          <div class="card">
-            <img src="http://openweathermap.org/img/wn/03d@2x.png" class="card-img-top"/>
-            <div class="card-body">
-              <h5 class="card-title">Thursday</h5>
-                <ul id="weather-display">
-                      <li>75˚ F | C</li>
-                      <li>Humidity: 35%</li>
-                      <li>Precipitation: 25%</li>
-                      <li>Description: Clear</li>
-                  </ul>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="http://openweathermap.org/img/wn/09d@2x.png" class="card-img-top"/>
-            <div class="card-body">
-              <h5 class="card-title">Friday</h5>
-                <ul id="weather-display">
-                      <li>75˚ F | C</li>
-                      <li>Humidity: 35%</li>
-                      <li>Precipitation: 25%</li>
-                      <li>Description: Clear</li>
-                  </ul>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="http://openweathermap.org/img/wn/02d@2x.png" class="card-img-top"/>
-            <div class="card-body">
-              <h5 class="card-title">Saturday</h5>
-                <ul id="weather-display">
-                      <li>75˚ F | C</li>
-                      <li>Humidity: 35%</li>
-                      <li>Precipitation: 25%</li>
-                      <li>Description: Clear</li>
-                  </ul>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="http://openweathermap.org/img/wn/11d@2x.png" class="card-img-top"/>
-            <div class="card-body">
-              <h5 class="card-title">Sunday</h5>
-                <ul id="weather-display">
-                      <li>75˚ F | C</li>
-                      <li>Humidity: 35%</li>
-                      <li>Precipitation: 25%</li>
-                      <li>Description: Clear</li>
-                  </ul>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
         </div>
-      </div>`;
+    </div>
+    `;
+  forecastElement.innerHTML = forecastHTML;
 }
