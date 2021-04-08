@@ -94,12 +94,13 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 searchCity("Atlanta");
 
 //5-Day Forecast
-function displayForecast() {
+function displayForecast(response) {
   console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row">`;
   let days = ["Thurs", "Fri", "Sat", "Sun"];
+
+  let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
@@ -107,7 +108,8 @@ function displayForecast() {
           <div class="weather-forecast-date">${day}</div>
             <img
             src="http://openweathermap.org/img/wn/03d@2x.png"
-            alt="" class="forecast-icons"
+            alt=""
+            class="forecast-icons"
             />
             <div class="weather-forecast-temperatures">
               <span class="weather-forecast-temperature-max">70˚ |</span>
