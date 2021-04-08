@@ -33,11 +33,6 @@ ul {
   padding-top: 20px;
 }
 
-.weather-forecast-date,
-.col-3 {
-  text-align: center;
-}
-
 #top-display {
   border-radius: 25px;
   display: inline;
