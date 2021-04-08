@@ -87,7 +87,7 @@ displayForecast();
 
 //5-Day Forecast
 function displayForecast() {
-  let forecastElement = document.querySelector("#weather-forecast");
+  let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
   forecastHTML =
@@ -105,5 +105,21 @@ function displayForecast() {
         </div>
     </div>
     `;
+  forecastHTML =
+    forecastHTML +
+    `<div class="col-2">
+          <div class="weather-forecast-date">Fri</div>
+            <img
+            src="http://openweathermap.org/img/wn/03d@2x.png"
+            alt=""
+            />
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperature-max">70˚</span>
+              <span class="weather-forecast-temperature-min">55˚</span>
+            </div>
+        </div>
+    </div>
+    `;
+  forecastHTML = forecastHTML + `</div> `;
   forecastElement.innerHTML = forecastHTML;
 }
