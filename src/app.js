@@ -109,7 +109,7 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div id="float-container">`;
+  let forecastHTML = `<div>`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 5) {
       forecastHTML =
